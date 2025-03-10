@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - GreenThumb</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhanced-style.css">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="plantes.html">Plantes</a>
+            <a href="jardins.html">Jardins</a>
+            <a href="boutique.html">Boutique</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="contact.html">Contact</a>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="blog-main">
+        <div class="section-header">
+            <h1>Notre Blog</h1>
+            <p>Découvrez nos articles sur le jardinage traditionnel marocain</p>
+        </div>
+
+        <div class="blog-grid" id="page1">
+            <article class="article-card">
+                <img src="https://www.magazine-couleursmaroc.com/cm-assets/uploads/2018/07/Photo1-e1608230945136.jpg" alt="Article sur le jardinage traditionnel" class="article-image">
+                <div class="article-content">
+                    <h3>L'Art du Jardinage Traditionnel Marocain</h3>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> 19 février 2025</span>
+                        <span><i class="far fa-user"></i> Par Ahmed</span>
+                    </div>
+                    <p>Découvrez les secrets millénaires du jardinage traditionnel marocain...</p>
+                    <div class="article-content-full" style="display: none;">
+                        <h4>Les Fondements du Jardinage Traditionnel</h4>
+                        <p>Le jardinage traditionnel marocain est un art ancestral qui combine beauté, fonctionnalité et durabilité. Cette pratique millénaire reflète la profonde compréhension des cycles naturels et l'adaptation au climat local.</p>
+                        
+                        <h4>Techniques Essentielles</h4>
+                        <ul>
+                            <li>Irrigation traditionnelle avec les systèmes de khettaras</li>
+                            <li>Culture en terrasses pour maximiser l'espace</li>
+                            <li>Rotation des cultures selon le calendrier lunaire</li>
+                            <li>Utilisation de composts naturels</li>
+                        </ul>
+                        
+                        <h4>Plantes Traditionnelles</h4>
+                        <p>Les jardins traditionnels marocains privilégient des espèces adaptées au climat local comme les oliviers, les palmiers, et les agrumes, créant ainsi un écosystème durable et productif.</p>
+                    </div>
+                    <button class="read-more">Lire la suite</button>
+                    <div class="comments-section">
+                        <h4>Commentaires</h4>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Nom" required>
+                            <textarea placeholder="Votre commentaire" required></textarea>
+                            <button type="submit" class="btn-primary">Publier</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="https://www.lopinion.ma/photo/art/grande/64684465-46319505.jpg?v=1652865765" alt="Plantes médicinales" class="article-image">
+                <div class="article-content">
+                    <h3>Les Plantes Médicinales du Maroc</h3>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> 18 février 2025</span>
+                        <span><i class="far fa-user"></i> Par Fatima</span>
+                    </div>
+                    <p>Explorez les vertus thérapeutiques des plantes marocaines traditionnelles...</p>
+                    <div class="article-content-full" style="display: none;">
+                        <h4>L'Héritage des Plantes Médicinales</h4>
+                        <p>Le Maroc possède une riche tradition d'utilisation des plantes médicinales, transmise de génération en génération. Ces connaissances ancestrales sont aujourd'hui reconnues pour leur efficacité.</p>
+                        
+                        <h4>Plantes Principales et Leurs Bienfaits</h4>
+                        <ul>
+                            <li>Thym (Zaatar) : Propriétés antiseptiques et respiratoires</li>
+                            <li>Armoise (Chiba) : Digestion et système immunitaire</li>
+                            <li>Verveine (Louiza) : Relaxation et sommeil</li>
+                            <li>Romarin (Azir) : Mémoire et circulation</li>
+                        </ul>
+                        
+                        <h4>Préparations Traditionnelles</h4>
+                        <p>Les herboristes marocains utilisent différentes méthodes de préparation : infusions, décoctions, macérations dans l'huile d'olive, et cataplasmes pour usage externe.</p>
+                    </div>
+                    <button class="read-more">Lire la suite</button>
+                    <div class="comments-section">
+                        <h4>Commentaires</h4>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Nom" required>
+                            <textarea placeholder="Votre commentaire" required></textarea>
+                            <button type="submit" class="btn-primary">Publier</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="blog-grid hidden" id="page2">
+            <article class="article-card">
+                <img src="https://www.visitmorocco.com/sites/default/files/thumbnails/image/parc-de-la-ligue-arabe.jpg" alt="Jardins d'eau" class="article-image">
+                <div class="article-content">
+                    <h3>Les Jardins d'Eau Traditionnels</h3>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> 17 février 2025</span>
+                        <span><i class="far fa-user"></i> Par Karim</span>
+                    </div>
+                    <p>Découvrez l'art ancestral des jardins d'eau marocains et leurs systèmes d'irrigation ingénieux...</p>
+                    <div class="article-content-full" style="display: none;">
+                        <h4>L'Art des Jardins d'Eau</h4>
+                        <p>Les jardins d'eau marocains représentent un chef-d'œuvre d'ingénierie hydraulique traditionnelle. Ces systèmes complexes permettent une gestion optimale de l'eau dans un climat aride.</p>
+                        
+                        <h4>Éléments Caractéristiques</h4>
+                        <ul>
+                            <li>Bassins de rétention d'eau ornementaux</li>
+                            <li>Canaux d'irrigation géométriques</li>
+                            <li>Fontaines et cascades rafraîchissantes</li>
+                            <li>Systèmes de filtration naturelle</li>
+                        </ul>
+                        
+                        <h4>Bénéfices Écologiques</h4>
+                        <p>Ces jardins créent des microclimats favorables à la biodiversité tout en optimisant l'utilisation de l'eau, une ressource précieuse dans les régions arides.</p>
+                    </div>
+                    <button class="read-more">Lire la suite</button>
+                    <div class="comments-section">
+                        <h4>Commentaires</h4>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Nom" required>
+                            <textarea placeholder="Votre commentaire" required></textarea>
+                            <button type="submit" class="btn-primary">Publier</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="https://www.agrimaroc.ma/wp-content/uploads/agriculture-desert-eau-1.jpg" alt="Plantes du désert" class="article-image">
+                <div class="article-content">
+                    <h3>Cultiver dans le Désert Marocain</h3>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> 16 février 2025</span>
+                        <span><i class="far fa-user"></i> Par Yasmine</span>
+                    </div>
+                    <p>Apprenez les techniques de culture adaptées au climat aride du désert marocain...</p>
+                    <div class="article-content-full" style="display: none;">
+                        <h4>Cultiver en Milieu Désertique</h4>
+                        <p>Le désert marocain abrite des techniques agricoles uniques développées au fil des siècles pour surmonter les défis d'un environnement extrême.</p>
+                        
+                        <h4>Techniques Adaptatives</h4>
+                        <ul>
+                            <li>Protection contre le vent et le soleil</li>
+                            <li>Systèmes d'irrigation économes en eau</li>
+                            <li>Sélection de variétés résistantes à la sécheresse</li>
+                            <li>Utilisation de paillis naturels</li>
+                        </ul>
+                        
+                        <h4>Cultures Traditionnelles du Désert</h4>
+                        <p>Les agriculteurs du désert cultivent des espèces adaptées comme le palmier dattier, l'arganier et diverses plantes aromatiques qui prospèrent dans ces conditions extrêmes.</p>
+                    </div>
+                    <button class="read-more">Lire la suite</button>
+                    <div class="comments-section">
+                        <h4>Commentaires</h4>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Nom" required>
+                            <textarea placeholder="Votre commentaire" required></textarea>
+                            <button type="submit" class="btn-primary">Publier</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="pagination">
+            <button class="pagination-btn active" data-page="1">1</button>
+            <button class="pagination-btn" data-page="2">2</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@greenthumb.ma</p>
+                <p>Tél: +212 5XX-XXXXXX</p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GreenThumb. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/blog.js"></script>
+    <script src="js/dark-mode.js"></script>
+</body>
+</html>

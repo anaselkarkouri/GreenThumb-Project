@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantes Marocaines - GreenThumb</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhanced-style.css">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/plantes-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="plantes.html" class="active">Plantes</a>
+            <a href="jardins.html">Jardins</a>
+            <a href="boutique.html">Boutique</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="plantes-main">
+        <section class="plantes-section">
+            <div class="section-header">
+                <h2>Plantes Marocaines</h2>
+                <p>Découvrez notre collection unique de plantes traditionnelles du Maroc</p>
+            </div>
+
+            <section class="search-section">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-bar" id="searchInput" placeholder="Rechercher des plantes...">
+                </div>
+            </section>
+
+            <section class="category-buttons">
+                <button class="category-btn active" data-category="all">
+                    <i class="fas fa-th-large"></i>
+                    Toutes les Plantes
+                </button>
+                <button class="category-btn" data-category="ete">
+                    <i class="fas fa-sun"></i>
+                    Été
+                </button>
+                <button class="category-btn" data-category="automne">
+                    <i class="fas fa-leaf"></i>
+                    Automne
+                </button>
+                <button class="category-btn" data-category="hiver">
+                    <i class="fas fa-snowflake"></i>
+                    Hiver
+                </button>
+                <button class="category-btn" data-category="aromatiques">
+                    <i class="fas fa-leaf"></i>
+                    Plantes Aromatiques
+                </button>
+                <button class="category-btn" data-category="medicinales">
+                    <i class="fas fa-mortar-pestle"></i>
+                    Plantes Médicinales
+                </button>
+                <button class="category-btn" data-category="ornementales">
+                    <i class="fas fa-spa"></i>
+                    Plantes Ornementales
+                </button>
+            </section>
+
+            <section class="plantes-grid content-to-export">
+                <!-- Plantes d'été -->
+                <article class="plant-card" data-category="ete">
+                    <img src="https://serreslavoie.com/cdn/shop/articles/shutterstock_267812054.jpg?v=1652289544&width=1920" alt="Tomate">
+                    <div class="plant-info">
+                        <h3>Tomate (طماطم)</h3>
+                        <p class="plant-preview">Parfaite pour l'été, la tomate est facile à cultiver et donne des fruits délicieux.</p>
+                        <div class="plant-details">
+                            <span><i class="fas fa-sun"></i> Plein soleil</span>
+                            <span><i class="fas fa-tint"></i> Arrosage régulier</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="plant-card" data-category="ete">
+                    <img src="https://www.clorofila.ma/wp-content/uploads/2023/03/basil-total-2759319_1280.jpg" alt="Basilic">
+                    <div class="plant-info">
+                        <h3>Basilic (ريحان)</h3>
+                        <p class="plant-preview">Herbe aromatique estivale parfaite pour la cuisine et résistante à la chaleur.</p>
+                        <div class="plant-details">
+                            <span><i class="fas fa-sun"></i> Mi-ombre</span>
+                            <span><i class="fas fa-tint"></i> Modéré</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Plantes d'automne -->
+                <article class="plant-card" data-category="automne">
+                    <img src="https://www.rustica.fr/images/chrysantheme-angali-rouge-sauve-guittet-fm.jpg" alt="Chrysanthème">
+                    <div class="plant-info">
+                        <h3>Chrysanthème (أقحوان)</h3>
+                        <p class="plant-preview">Fleur d'automne colorée, parfaite pour les jardins en cette saison.</p>
+                        <div class="plant-details">
+                            <span><i class="fas fa-sun"></i> Soleil partiel</span>
+                            <span><i class="fas fa-tint"></i> Modéré</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="plant-card" data-category="automne">
+                    <img src="https://img.passeportsante.net/1200x675/2021-05-03/i102007-chou-fleur-nu.jpg" alt="Chou">
+                    <div class="plant-info">
+                        <h3>Chou (ملفوف)</h3>
+                        <p class="plant-preview">Légume robuste idéal pour la culture d'automne.</p>
+                        <div class="plant-details">
+                            <span><i class="fas fa-sun"></i> Plein soleil</span>
+                            <span><i class="fas fa-tint"></i> Régulier</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Plantes d'hiver -->
+                <article class="plant-card" data-category="hiver">
+                    <img src="https://img.passeportsante.net/1200x675/2021-05-03/i104345-romarin-ps.jpg" alt="Romarin">
+                    <div class="plant-info">
+                        <h3>Romarin (إكليل الجبل)</h3>
+                        <p class="plant-preview">Herbe aromatique résistante qui prospère même en hiver.</p>
+                        <div class="plant-details">
+                            <span><i class="fas fa-sun"></i> Plein soleil</span>
+                            <span><i class="fas fa-tint"></i> Faible</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="plant-card" data-category="hiver">
+                    <img src="https://media.ooreka.fr/public/image/plant/50/mainImage-source-9261201.jpg" alt="Pensée">
+                    <div class="plant-info">
+                        <h3>Pensée (بنفسج)</h3>
+                        <p class="plant-preview">Fleur colorée qui fleurit pendant les mois d'hiver.</p>
+                        <div class="plant-details">
+                            <span><i class="fas fa-sun"></i> Mi-ombre</span>
+                            <span><i class="fas fa-tint"></i> Modéré</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="plant-card" data-category="aromatiques">
+                    <img src="https://www.infomediaire.net/wp-content/uploads/2019/06/Menthe-marocaine.jpg" alt="Menthe Marocaine">
+                    <div class="plant-info">
+                        <h3>Menthe Marocaine (النعناع)</h3>
+                        <p class="plant-preview">La menthe marocaine est une plante aromatique essentielle dans la cuisine et la culture marocaine. Cette plante vivace est reconnue pour ses propriétés digestives et son arôme intense.</p>
+                        <div class="plant-details hidden">
+                            <p>La menthe marocaine (Mentha spicata) est l'une des plantes les plus emblématiques de la culture marocaine. Son parfum intense et sa saveur rafraîchissante en font un ingrédient indispensable du célèbre thé à la menthe marocain.</p>
+                            
+                            <p>Cette plante vivace, qui peut atteindre 30 à 60 cm de hauteur, se caractérise par ses tiges dressées et ses feuilles vert vif, dentelées et très aromatiques. Sa culture est relativement simple, ce qui en fait une excellente option pour les jardiniers débutants.</p>
+
+                            <p>Dans la médecine traditionnelle marocaine, la menthe est utilisée pour :</p>
+                            <ul>
+                                <li>Faciliter la digestion</li>
+                                <li>Soulager les maux de tête</li>
+                                <li>Rafraîchir l'haleine</li>
+                                <li>Apaiser les troubles digestifs</li>
+                            </ul>
+
+                            <p>Pour une culture réussie, voici quelques conseils essentiels :</p>
+                            <ul>
+                                <li>Choisir un emplacement mi-ombragé</li>
+                                <li>Maintenir le sol humide mais pas détrempé</li>
+                                <li>Tailler régulièrement pour favoriser la repousse</li>
+                                <li>Diviser les touffes tous les 2-3 ans</li>
+                            </ul>
+                        </div>
+                        <button class="btn-read">Lire la suite</button>
+                    </div>
+                </article>
+
+                <article class="plant-card" data-category="aromatiques">
+                    <img src="https://images-ca-1-0-1-eu.s3-eu-west-1.amazonaws.com/photos/original/442/coriandre-feuilles-3000x2000.jpg" alt="Coriandre">
+                    <div class="plant-info">
+                        <h3>Coriandre (القزبور)</h3>
+                        <p class="plant-preview">La coriandre est une herbe aromatique incontournable de la cuisine marocaine, appréciée pour sa saveur unique et ses propriétés digestives.</p>
+                        <div class="plant-details hidden">
+                            <p>La coriandre est une plante herbacée annuelle qui occupe une place privilégiée dans la gastronomie marocaine. Ses feuilles fraîches parfument de nombreux plats traditionnels, tandis que ses graines sont utilisées comme épice.</p>
+
+                            <p>Cette plante polyvalente est non seulement un ingrédient culinaire majeur, mais elle possède également de nombreuses vertus médicinales reconnues par la médecine traditionnelle marocaine.</p>
+
+                            <p>Les bienfaits de la coriandre incluent :</p>
+                            <ul>
+                                <li>Amélioration de la digestion</li>
+                                <li>Propriétés anti-inflammatoires</li>
+                                <li>Action détoxifiante</li>
+                                <li>Richesse en vitamines et minéraux</li>
+                            </ul>
+
+                            <p>Pour cultiver la coriandre avec succès :</p>
+                            <ul>
+                                <li>Semer au printemps ou en automne</li>
+                                <li>Préférer un sol bien drainé</li>
+                                <li>Arroser régulièrement mais modérément</li>
+                                <li>Récolter les feuilles jeunes pour plus de saveur</li>
+                            </ul>
+                        </div>
+                        <button class="btn-read">Lire la suite</button>
+                    </div>
+                </article>
+
+                <article class="plant-card" data-category="medicinales">
+                    <img src="https://www.clorofila.ma/wp-content/uploads/2024/03/verveine-citronnelle.jpg" alt="Verveine">
+                    <div class="plant-info">
+                        <h3>Verveine (لويزة)</h3>
+                        <p class="plant-preview">La verveine, ou louiza, est une plante aromatique très appréciée au Maroc pour ses propriétés apaisantes et son parfum citronné délicat.</p>
+                        <div class="plant-details hidden">
+                            <p>La verveine odorante est une plante médicinale précieuse dans la tradition marocaine. Son parfum citronné et ses nombreuses vertus en font une des plantes les plus appréciées pour la préparation de tisanes apaisantes.</p>
+
+                            <p>Cette plante vivace peut atteindre 1,5 à 2 mètres de hauteur et se caractérise par ses feuilles lancéolées au parfum citronné intense. Elle est particulièrement appréciée pour ses propriétés relaxantes et digestives.</p>
+
+                            <p>Utilisations traditionnelles de la verveine :</p>
+                            <ul>
+                                <li>Tisane relaxante avant le coucher</li>
+                                <li>Aide à la digestion après les repas</li>
+                                <li>Soulagement des troubles digestifs</li>
+                                <li>Réduction du stress et de l'anxiété</li>
+                            </ul>
+
+                            <p>Conseils de culture au Maroc :</p>
+                            <ul>
+                                <li>Planter dans un endroit ensoleillé ou mi-ombragé</li>
+                                <li>Protéger des vents forts</li>
+                                <li>Arroser régulièrement en été</li>
+                                <li>Tailler légèrement au printemps</li>
+                            </ul>
+                        </div>
+                        <button class="btn-read">Lire la suite</button>
+                    </div>
+                </article>
+
+                <article class="plant-card" data-category="ornementales">
+                    <img src="https://marocorganic.ma/wp-content/uploads/2023/08/bougainvillier.jpg" alt="Bougainvillier">
+                    <div class="plant-info">
+                        <h3>Bougainvillier (جهنمية)</h3>
+                        <p class="plant-preview">Le bougainvillier est une plante grimpante spectaculaire, très appréciée dans les jardins marocains pour ses magnifiques fleurs colorées et sa robustesse.</p>
+                        <div class="plant-details hidden">
+                            <p>Le bougainvillier est l'une des plantes ornementales les plus emblématiques des jardins marocains. Cette plante grimpante vigoureuse peut atteindre plusieurs mètres de hauteur et se couvre de bractées colorées pendant de longues périodes.</p>
+                            
+                            <p>Caractéristiques principales :</p>
+                            <ul>
+                                <li>Hauteur : 3-8 mètres en grimpant</li>
+                                <li>Exposition : Plein soleil</li>
+                                <li>Floraison : Printemps à automne</li>
+                                <li>Couleurs : Rose, violet, orange, blanc</li>
+                            </ul>
+
+                            <p>Culture et entretien :</p>
+                            <ul>
+                                <li>Sol bien drainé et riche</li>
+                                <li>Arrosage modéré</li>
+                                <li>Taille régulière pour contrôler la croissance</li>
+                                <li>Protection contre le gel en hiver</li>
+                            </ul>
+
+                            <p>Utilisation dans le jardin :</p>
+                            <ul>
+                                <li>Pergolas et treillages</li>
+                                <li>Murs et clôtures</li>
+                                <li>Création d'arches fleuries</li>
+                                <li>Points focaux colorés</li>
+                            </ul>
+                        </div>
+                        <button class="btn-read">Lire la suite</button>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À Propos</h3>
+                <p>GreenThumb est votre guide pour le jardinage marocain traditionnel et moderne.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="plantes.html">Plantes</a></li>
+                    <li><a href="jardins.html">Jardins</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@greenthumb.ma</p>
+                <p>Tél: +212 5XX-XXXXXX</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GreenThumb. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/plantes.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/content-toggle.js"></script>
+    <script src="js/category-filter.js"></script>
+    <script src="js/plantes.js"></script>
+</body>
+</html>

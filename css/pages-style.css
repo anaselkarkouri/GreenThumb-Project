@@ -1,0 +1,462 @@
+/* Styles communs pour toutes les pages */
+:root {
+    --page-header-height: 300px;
+    --card-border-radius: 15px;
+    --transition-speed: 0.3s;
+}
+
+/* Header de page commun */
+.page-header {
+    height: var(--page-header-height);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(46,204,113,0.8), rgba(39,174,96,0.8));
+}
+
+.page-header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.page-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Styles pour la page Jardins */
+.jardins-main {
+    padding: 2rem 5%;
+}
+
+.search-section {
+    margin-bottom: 3rem;
+}
+
+.search-container {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #27ae60;
+    box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.1);
+}
+
+.search-container i {
+    position: absolute;
+    left: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.search-container input[type="text"]::placeholder {
+    color: #999;
+}
+
+.search-container button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+}
+
+.search-container button:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.jardins-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.jardin-card {
+    background: white;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    transition: all var(--transition-speed) ease;
+}
+
+.jardin-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px var(--shadow-color);
+}
+
+.jardin-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: all var(--transition-speed) ease;
+}
+
+.jardin-card:hover img {
+    transform: scale(1.1);
+}
+
+.jardin-info {
+    padding: 1.5rem;
+}
+
+.jardin-info h3 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.jardin-details {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: var(--background-alt);
+    border-radius: 10px;
+}
+
+.jardin-details h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.jardin-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.jardin-details li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.jardin-details li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.export-pdf-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+    width: 100%;
+    font-weight: 600;
+}
+
+.export-pdf-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Styles pour le planificateur de jardin */
+.jardin-planning {
+    background: var(--background-alt);
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    margin: 3rem 0;
+}
+
+.planning-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.planning-tools {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--card-border-radius);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.draggable-elements {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.garden-element {
+    background: var(--background-alt);
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: move;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all var(--transition-speed) ease;
+}
+
+.garden-element:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateX(5px);
+}
+
+.garden-element img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.garden-canvas {
+    background: white;
+    border-radius: var(--card-border-radius);
+    min-height: 400px;
+    position: relative;
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(var(--border-color) 1px, transparent 1px),
+                      linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.2;
+}
+
+.canvas-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-light);
+    text-align: center;
+}
+
+.save-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all var(--transition-speed) ease;
+    margin-top: 2rem;
+}
+
+.save-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Styles pour la page Contact */
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.info-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-card i {
+    font-size: 2rem;
+    color: #27ae60;
+    margin-bottom: 1rem;
+}
+
+.info-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.info-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.page-number {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+}
+
+.page-number.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.page-number:hover:not(.active) {
+    background: var(--background-alt);
+}
+
+.prev-page,
+.next-page {
+    background: none;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+}
+
+.prev-page:hover,
+.next-page:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-header {
+        height: 200px;
+    }
+
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .planning-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jardins-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-container {
+        flex-direction: column;
+        border-radius: var(--card-border-radius);
+    }
+
+    .search-container button {
+        width: 100%;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .section-header p {
+        font-size: 1.1rem;
+    }
+    
+    .contact-section {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    .jardin-card,
+    .planning-tools,
+    .garden-canvas {
+        background: var(--card-background);
+    }
+
+    .search-container {
+        background: var(--card-background);
+    }
+
+    .search-container input {
+        background: var(--card-background);
+        color: var(--text-color);
+    }
+
+    .jardin-details {
+        background: rgba(255,255,255,0.05);
+    }
+}

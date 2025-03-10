@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardins Traditionnels - GreenThumb</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhanced-style.css">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/jardins-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>window.jsPDF = window.jspdf.jsPDF;</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="plantes.html">Plantes</a>
+            <a href="jardins.html" class="active">Jardins</a>
+            <a href="boutique.html">Boutique</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="jardins-main">
+        <section class="jardins-section">
+            <div class="section-header">
+                <h2>Jardins Traditionnels Marocains</h2>
+                <p>Découvrez la beauté et l'histoire des jardins traditionnels du Maroc</p>
+            </div>
+            <div class="page-header" style="background-image: url('images/jardins/header-bg.jpg');">
+                <div class="page-header-content">
+                </div>
+            </div>
+
+            <section class="search-section">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher des jardins...">
+                    <button id="searchButton" class="btn-primary">
+                        <i class="fas fa-search"></i>
+                        Rechercher
+                    </button>
+                </div>
+            </section>
+
+            <section class="grid content-to-export">
+                <article class="article-card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/4f/7f/06/20190418-125956-largejpg.jpg?w=900&h=-1&s=1" alt="Jardin Majorelle" class="article-image">
+                    <div class="article-content">
+                        <h3 class="article-title">Jardin Majorelle - Marrakech</h3>
+                        <p class="article-excerpt">Le Jardin Majorelle est un jardin botanique et paysager à Marrakech. Créé par le peintre français Jacques Majorelle, il abrite une collection exceptionnelle de cactus et de plantes exotiques.</p>
+                        <div class="jardin-details">
+                            <h4>Caractéristiques</h4>
+                            <ul>
+                                <li><i class="fas fa-palette"></i> Style : Art déco et berbère</li>
+                                <li><i class="fas fa-ruler-combined"></i> Surface : 9000 m²</li>
+                                <li><i class="fas fa-leaf"></i> Collections : Plus de 300 espèces de plantes</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-secondary export-pdf-btn">
+                            <i class="fas fa-file-pdf"></i>
+                            Exporter en PDF
+                        </button>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <img src="https://images.surferseo.art/05ac9c5b-eb38-4d88-b0ae-91a2877409c2.png" alt="Jardins de la Ménara" class="article-image">
+                    <div class="article-content">
+                        <h3 class="article-title">Jardins de la Ménara - Marrakech</h3>
+                        <p class="article-excerpt">Les jardins de la Ménara, créés au XIIe siècle, sont un exemple parfait des jardins traditionnels marocains avec leur grand bassin et leurs oliviers centenaires.</p>
+                        <div class="jardin-details">
+                            <h4>Caractéristiques</h4>
+                            <ul>
+                                <li><i class="fas fa-tree"></i> Style : Jardin traditionnel marocain</li>
+                                <li><i class="fas fa-ruler-combined"></i> Surface : 14 hectares</li>
+                                <li><i class="fas fa-tint"></i> Spécificité : Système d'irrigation historique</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-secondary export-pdf-btn">
+                            <i class="fas fa-file-pdf"></i>
+                            Exporter en PDF
+                        </button>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <img src="https://www.visitrabat.com/wp-content/uploads/2019/04/kasabah_oudayas-min.jpg" alt="Jardins Andalous" class="article-image">
+                    <div class="article-content">
+                        <h3 class="article-title">Jardins Andalous - Rabat</h3>
+                        <p class="article-excerpt">Les Jardins Andalous de Rabat reflètent l'influence de l'architecture hispano-mauresque avec leurs parterres géométriques et leurs fontaines décoratives.</p>
+                        <div class="jardin-details">
+                            <h4>Caractéristiques</h4>
+                            <ul>
+                                <li><i class="fas fa-archway"></i> Style : Hispano-mauresque</li>
+                                <li><i class="fas fa-water"></i> Éléments : Fontaines et parterres géométriques</li>
+                                <li><i class="fas fa-seedling"></i> Végétation : Agrumes et plantes aromatiques</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-secondary export-pdf-btn">
+                            <i class="fas fa-file-pdf"></i>
+                            Exporter en PDF
+                        </button>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <img src="https://www.riadsouafine.com/images/header/index.jpg" alt="Jardin de Riad" class="article-image">
+                    <div class="article-content">
+                        <h3 class="article-title">Jardins de Riad - Fès</h3>
+                        <p class="article-excerpt">Les jardins intérieurs des riads traditionnels de Fès sont des exemples parfaits de l'art du jardinage en espace restreint, combinant eau, ombre et parfums.</p>
+                        <div class="jardin-details">
+                            <h4>Caractéristiques</h4>
+                            <ul>
+                                <li><i class="fas fa-home"></i> Style : Jardin intérieur traditionnel</li>
+                                <li><i class="fas fa-ruler-combined"></i> Éléments : Fontaine centrale, pergolas</li>
+                                <li><i class="fas fa-seedling"></i> Plantes : Agrumes, jasmin, bougainvilliers</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-secondary export-pdf-btn">
+                            <i class="fas fa-file-pdf"></i>
+                            Exporter en PDF
+                        </button>
+                    </div>
+                </article>
+            </section>
+
+            <section class="moroccan-garden-guide">
+                <h2 class="section-title">Guide du Jardin Traditionnel Marocain</h2>
+                <div class="guide-container">
+                    <div class="guide-section">
+                        <h3><i class="fas fa-star-and-crescent"></i> Principes Fondamentaux</h3>
+                        <ul>
+                            <li><strong>Symétrie :</strong> La disposition symétrique est essentielle dans le jardin marocain traditionnel</li>
+                            <li><strong>Riadh :</strong> Organisation autour d'un point central, généralement une fontaine</li>
+                            <li><strong>Intimité :</strong> Création d'un espace privé et paisible</li>
+                            <li><strong>Sens :</strong> Stimulation des sens avec des parfums, des sons d'eau et des couleurs vives</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h3><i class="fas fa-water"></i> Éléments d'Eau</h3>
+                        <ul>
+                            <li><strong>Fontaine centrale :</strong> Point focal traditionnel du jardin</li>
+                            <li><strong>Canaux d'eau :</strong> Système de distribution en croix pour l'irrigation</li>
+                            <li><strong>Bassins :</strong> Réflexion de la lumière et rafraîchissement de l'air</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h3><i class="fas fa-leaf"></i> Végétation Recommandée</h3>
+                        <ul>
+                            <li><strong>Arbres fruitiers :</strong> Orangers, citronniers, grenadiers, figuiers</li>
+                            <li><strong>Plantes aromatiques :</strong> Menthe, jasmin, rose damascène</li>
+                            <li><strong>Palmiers :</strong> Pour l'ombre et la verticalité</li>
+                            <li><strong>Cyprès :</strong> Pour structurer l'espace</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h3><i class="fas fa-pencil-ruler"></i> Aménagement de l'Espace</h3>
+                        <ul>
+                            <li><strong>Allées :</strong> Chemins en zellige ou en pierre naturelle</li>
+                            <li><strong>Pergolas :</strong> Couvertes de plantes grimpantes pour l'ombre</li>
+                            <li><strong>Zones de repos :</strong> Bancs traditionnels et coins salon</li>
+                            <li><strong>Murs :</strong> Enduits à la chaux ou couverts de plantes grimpantes</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h3><i class="fas fa-palette"></i> Décoration et Ornements</h3>
+                        <ul>
+                            <li><strong>Zelliges :</strong> Mosaïques traditionnelles pour les fontaines et bordures</li>
+                            <li><strong>Lanternes :</strong> Éclairage d'ambiance traditionnel</li>
+                            <li><strong>Pots en terre cuite :</strong> Pour les plantations et la décoration</li>
+                            <li><strong>Moucharabiehs :</strong> Pour créer de l'ombre et de l'intimité</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h3><i class="fas fa-list-ol"></i> Étapes de Création</h3>
+                        <ol>
+                            <li>Planifier l'espace en respectant la symétrie</li>
+                            <li>Installer le système d'eau central</li>
+                            <li>Créer les allées principales en croix</li>
+                            <li>Planter les grands arbres et palmiers</li>
+                            <li>Aménager les parterres de plantes</li>
+                            <li>Installer les éléments décoratifs</li>
+                            <li>Mettre en place l'éclairage</li>
+                        </ol>
+                    </div>
+
+                    <div class="guide-section">
+                        <h3><i class="fas fa-hand-holding-water"></i> Conseils d'Entretien</h3>
+                        <ul>
+                            <li><strong>Arrosage :</strong> Régulier et adapté au climat local</li>
+                            <li><strong>Taille :</strong> Maintien de la forme géométrique des plantes</li>
+                            <li><strong>Nettoyage :</strong> Entretien régulier des bassins et fontaines</li>
+                            <li><strong>Fertilisation :</strong> Utilisation d'engrais naturels</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À Propos</h3>
+                <p>GreenThumb est votre guide pour le jardinage marocain traditionnel et moderne.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="plantes.html">Plantes</a></li>
+                    <li><a href="jardins.html">Jardins</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@greenthumb.ma</p>
+                <p>Tél: +212 5XX-XXXXXX</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GreenThumb. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/export-pdf.js"></script>
+    <script src="js/search-jardins.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/jardins.js"></script>
+</body>
+</html>

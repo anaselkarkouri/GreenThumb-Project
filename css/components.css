@@ -1,0 +1,456 @@
+/* Cart Modal Styles */
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    background: var(--background-color, white);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.cart-modal-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.cart-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-modal-header h2 {
+    margin: 0;
+    color: var(--text-color, #333);
+}
+
+.close-cart {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color, #333);
+}
+
+.cart-items {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color, #eee);
+    position: relative;
+}
+
+.cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-details h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: var(--text-color, #333);
+}
+
+.cart-item-price {
+    color: var(--primary-color, #4CAF50);
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quantity-btn {
+    background: var(--background-color, white);
+    border: 1px solid var(--border-color, #eee);
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color, #333);
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid var(--border-color, #eee);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.remove-item {
+    background: none;
+    border: none;
+    color: #ff4444;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 2px solid var(--border-color, #eee);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--text-color, #333);
+}
+
+.checkout-btn {
+    background: var(--primary-color, #4CAF50);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.checkout-btn:hover {
+    background: var(--primary-color-dark, #388E3C);
+}
+
+.empty-cart {
+    text-align: center;
+    color: var(--text-muted, #666);
+    padding: 20px;
+}
+
+.cart-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--success-color, #4CAF50);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.3s ease-out;
+    z-index: 1000;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Cart Icon Styles */
+.nav-cart {
+    position: relative;
+    margin-left: auto;
+}
+
+.cart-icon {
+    color: var(--text-color, #333);
+    font-size: 1.2em;
+    text-decoration: none;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--primary-color, #4CAF50);
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    min-width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles pour la recherche du blog */
+.blog-search {
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 18px;
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 15px 20px 15px 45px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    background-color: white;
+    color: #333;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
+}
+
+.search-container input[type="text"]::placeholder {
+    color: #999;
+}
+
+/* Animation des articles */
+.article-card {
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.article-card.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    display: none;
+}
+
+/* Message aucun résultat */
+.no-results-message {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-size: 1.1em;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Styles pour le blog */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog-grid.hidden {
+    display: none;
+}
+
+.article-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 20px;
+}
+
+.article-content h3 {
+    margin: 0 0 10px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.article-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.article-meta span {
+    margin-right: 15px;
+}
+
+.article-meta i {
+    margin-right: 5px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Styles pour le contenu détaillé des articles */
+.article-content-full {
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.article-content-full h4 {
+    color: #2c5282;
+    margin: 20px 0 10px;
+    font-size: 1.2em;
+}
+
+.article-content-full h4:first-child {
+    margin-top: 0;
+}
+
+.article-content-full p {
+    line-height: 1.6;
+    color: #4a5568;
+    margin-bottom: 15px;
+}
+
+.article-content-full ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.article-content-full li {
+    margin: 8px 0;
+    color: #4a5568;
+    line-height: 1.4;
+}
+
+/* Animation pour le contenu détaillé */
+.article-content-full {
+    transition: all 0.5s ease-in-out;
+}
+
+/* Styles pour la pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    gap: 10px;
+}
+
+.pagination-btn {
+    padding: 8px 15px;
+    border: 2px solid #4CAF50;
+    background: white;
+    color: #4CAF50;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.pagination-btn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination-btn.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Styles pour les commentaires */
+.comments-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.comment-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}

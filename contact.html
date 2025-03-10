@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - GreenThumb</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhanced-style.css">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="plantes.html">Plantes</a>
+            <a href="jardins.html">Jardins</a>
+            <a href="boutique.html">Boutique</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html" class="active">Contact</a>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <section class="contact-section">
+            <div class="section-header">
+                <h2>Contactez-nous</h2>
+                <p>Nous sommes là pour répondre à toutes vos questions sur le jardinage marocain</p>
+            </div>
+
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Notre Adresse</h3>
+                    <p>123 Avenue Mohammed V</p>
+                    <p>Rabat, Maroc</p>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Téléphone</h3>
+                    <p>+212 5XX-XXXXXX</p>
+                    <p>+212 6XX-XXXXXX</p>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>contact@greenthumb.ma</p>
+                    <p>support@greenthumb.ma</p>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Heures d'Ouverture</h3>
+                    <p>Lun - Ven: 9h - 18h</p>
+                    <p>Sam: 9h - 13h</p>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>Envoyez-nous un Message</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom Complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="question">Question Générale</option>
+                            <option value="support">Support Technique</option>
+                            <option value="business">Partenariat</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Envoyer le Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>Notre Localisation</h2>
+            <div class="map-container">
+                <!-- Replace with actual map embed code -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.7487917277247!2d-6.8347892!3d34.020882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAxJzE1LjIiTiA2wrA1MCcwNS4yIlc!5e0!3m2!1sfr!2sma!4v1635942468935!5m2!1sfr!2sma" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À Propos</h3>
+                <p>GreenThumb est votre guide pour le jardinage marocain traditionnel et moderne.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="plantes.html">Plantes</a></li>
+                    <li><a href="jardins.html">Jardins</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Réseaux Sociaux</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GreenThumb. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

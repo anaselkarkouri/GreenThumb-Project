@@ -1,0 +1,107 @@
+[data-theme="dark"] {
+    --primary-color: #4caf50;
+    --secondary-color: #8bc34a;
+    --accent-color: #ff9800;
+    --text-color: #e0e0e0;
+    --background-color: #121212;
+    --card-background: #1e1e1e;
+    --header-background: #1a1a1a;
+    --footer-background: #1a1a1a;
+    --footer-text: #e0e0e0;
+}
+
+[data-theme="dark"] .category-card {
+    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+[data-theme="dark"] header {
+    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+[data-theme="dark"] #searchInput {
+    background-color: var(--card-background);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .nav-links a {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .cart i {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .garden-planner {
+    background-color: var(--card-background);
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle i {
+    font-size: 1.5rem;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover i {
+    transform: scale(1.1);
+}
+
+/* Style du toggle dark mode */
+.dark-mode-toggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 4px 4px 0 0 #fff;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle:hover .moon {
+    transform: scale(1.1);
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --card-background: #2d2d2d;
+    --border-color: #404040;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .moon {
+    box-shadow: 4px 4px 0 0 #ffd700;
+}
+
+[data-theme="dark"] .theme-toggle i {
+    color: #ffd700;
+}
+
+[data-theme="dark"] .theme-switch i {
+    color: var(--text-color);
+}

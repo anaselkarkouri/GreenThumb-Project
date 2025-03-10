@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - GreenThumb</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhanced-style.css">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/boutique-style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="plantes.html">Plantes</a>
+            <a href="jardins.html">Jardins</a>
+            <a href="boutique.html" class="active">Boutique</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <div class="nav-cart">
+                <a href="#" id="cartIcon" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="boutique-section">
+            <div class="section-header">
+                <h2 class="page-title">Notre Boutique</h2>
+                <p class="page-subtitle">Découvrez notre sélection de plantes, graines et accessoires de jardinage traditionnels</p>
+            </div>
+
+            <section class="categories-filter">
+                <div class="filter-controls">
+                    <div class="category-buttons">
+                        <button class="filter-btn active" data-category="all">
+                            <i class="fas fa-th-large"></i> Tout
+                        </button>
+                        <button class="filter-btn" data-category="graines">
+                            <i class="fas fa-seedling"></i> Graines et Semences
+                        </button>
+                        <button class="filter-btn" data-category="outils">
+                            <i class="fas fa-tools"></i> Outils de Jardinage
+                        </button>
+                        <button class="filter-btn" data-category="decoration">
+                            <i class="fas fa-leaf"></i> Décoration de Jardin
+                        </button>
+                    </div>
+                    <div class="sort-buttons">
+                        <button class="sort-btn" data-sort="name">
+                            <i class="fas fa-sort-alpha-down"></i> Nom
+                        </button>
+                        <button class="sort-btn" data-sort="price">
+                            <i class="fas fa-sort-numeric-down"></i> Prix
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products-grid">
+                <!-- Graines et Semences -->
+                <div class="product-card" data-category="graines" data-product-id="1">
+                    <div class="product-badges">
+                        <span class="badge badge-new">Nouveau</span>
+                        <span class="badge badge-promo">-20%</span>
+                    </div>
+                    <img src="https://www.nilabeautys.com/cdn/shop/files/graines-de-menthe-50g-100g-200g-fraicheur-naturelle-a-portee-de-main-811584_466x500.jpg?v=1725215956" alt="Graines de Menthe">
+                    <div class="content">
+                        <h3 class="product-title">Graines de Menthe Marocaine</h3>
+                        <p class="description">Graines de menthe traditionnelle marocaine, parfaites pour votre jardin aromatique.</p>
+                        <p class="product-price">25.00 DH</p>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="graines" data-product-id="2">
+                    <img src="https://www.darwin-nutrition.fr/wp-content/uploads/2020/06/AdobeStock_353791440.jpeg" alt="Graines de Basilic">
+                    <div class="content">
+                        <h3 class="product-title">Graines de Basilic</h3>
+                        <p class="description">Basilic aromatique marocain, idéal pour la cuisine et la médecine traditionnelle.</p>
+                        <p class="product-price">20.00 DH</p>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Outils de Jardinage -->
+                <div class="product-card" data-category="outils" data-product-id="3">
+                    <img src="https://i.f1g.fr/media/cms/orig/2023/08/14/a3c4beed8c3ebcee1dd2d5f42f92c60126338a730dffc73af0675fd9cb7d1296.jpg" alt="Arrosoir Traditionnel">
+                    <div class="content">
+                        <h3 class="product-title">Arrosoir Traditionnel</h3>
+                        <p class="description">Arrosoir en cuivre fait main par des artisans marocains.</p>
+                        <p class="product-price">150.00 DH</p>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="outils" data-product-id="4">
+                    <img src="https://pf.nice-cdn.com/upload/image/product/large/default/felco-2-secateur-professionnel-classique-1-st-1667646-fr.jpg" alt="Sécateur Professionnel">
+                    <div class="content">
+                        <h3 class="product-title">Sécateur Professionnel</h3>
+                        <p class="description">Sécateur de qualité professionnelle pour l'entretien de vos plantes.</p>
+                        <p class="product-price">45.00 DH</p>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Décoration de Jardin -->
+                <div class="product-card" data-category="decoration" data-product-id="5">
+                    <img src="https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/31/862026/1.jpg?9385" alt="Lanterne Marocaine">
+                    <div class="content">
+                        <h3 class="product-title">Lanterne Marocaine</h3>
+                        <p class="description">Lanterne traditionnelle en métal travaillé. Parfaite pour créer une ambiance magique dans votre jardin.</p>
+                        <p class="product-price">300.00 DH</p>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="decoration" data-product-id="6">
+                    <img src="https://maplante.ma/wp-content/uploads/2023/03/Nouvelle-collection-terre-cuite-desin-made-in-morocco.jpg?v=1679915541" alt="Pot en Terre Cuite">
+                    <div class="content">
+                        <h3 class="product-title">Pot en Terre Cuite</h3>
+                        <p class="description">Pot traditionnel marocain en terre cuite. Parfait pour vos plantes et la décoration de votre jardin.</p>
+                        <p class="product-price">120.00 DH</p>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pagination">
+                <button class="pagination-btn prev-page" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="page-numbers">
+                    <button class="page-number active">1</button>
+                    <button class="page-number">2</button>
+                    <button class="page-number">3</button>
+                </div>
+                <button class="pagination-btn next-page">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À Propos</h3>
+                <p>GreenThumb est votre guide pour le jardinage marocain traditionnel et moderne.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="plantes.html">Plantes</a></li>
+                    <li><a href="jardins.html">Jardins</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@greenthumb.ma</p>
+                <p>Tél: +212 5XX-XXXXXX</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GreenThumb. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/boutique.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenThumb - Jardinage Marocain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhanced-style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://media-hosting.imagekit.io//4b7d668b59c849e3/ggrr.png?Expires=1834619882&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=eLruvGBjfr8Zql1EnvMnkxlsJjbblpVYFDddE~TA~TNHErWNn7hFBkwy6F9Uj97kXTSZ3uj124r15C1qtD15x0kTVfgaDGMnM07j1Pw6UC6oaPrPMFoc0i2QehwDfdbAQFPlpfMtjRBBi20rR1jVTumiLrgCoGkY8SWaLIbaGBZHJHFISlv-Vqovv3T~G8SoskyonLIi25Pr2oCSY-XNesZznMMjXn0k1NejeOkSlAnTlpX-mGF~TJx-Vp~faRN2E~mGxljjakpU2CL5LcgfTrINe~eo2SCqSbb4OCwg~aa0vmfZbkfefGf3Y9vnocq1SeCpcJayeKc~paO2xWYmqQ__" alt="GreenThumb" class="nav-logo">
+            <div class="nav-links">
+                <a href="index.html" class="active">Accueil</a>
+                <a href="plantes.html">Plantes</a>
+                <a href="jardins.html">Jardins</a>
+                <a href="boutique.html">Boutique</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-cart">
+                <a href="#" id="cartIcon" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Découvrez l'Art du<br>Jardinage Marocain</h1>
+                <p>Explorez nos conseils, outils et plantes pour créer votre propre paradis vert</p>
+                <div class="hero-buttons">
+                    <a href="plantes.html" class="btn primary">Explorer les Plantes</a>
+                    <a href="boutique.html" class="btn secondary">Visiter la Boutique</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section class="featured-categories" data-aos="fade-up">
+            <h2>Nos Catégories Populaires</h2>
+            <div class="category-grid">
+                <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-image">
+                        <img src="https://www.leparisien.fr/resizer/siehMh587PDPcwjLA1XK4Gh1XC8=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/lpguideshopping/EQPLUMSWENHV3AD2JZ2YUGPRHY.jpg" alt="Herbes Aromatiques">
+                    </div>
+                    <div class="category-content">
+                        <h3>Herbes Aromatiques</h3>
+                        <p>Découvrez nos herbes traditionnelles marocaines</p>
+                        <a href="plantes.html#herbes" class="category-link">Explorer <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-image">
+                        <img src="https://images.ctfassets.net/b85ozb2q358o/ee4d0e9abb004661eb69f036a62e6e46e7260d6c656198ef1081b8bab570ff79/e80316a6d8f2447835fbf547cf1a998d/image.png" alt="Arbres Fruitiers">
+                    </div>
+                    <div class="category-content">
+                        <h3>Arbres Fruitiers</h3>
+                        <p>Des variétés adaptées au climat marocain</p>
+                        <a href="plantes.html#fruits" class="category-link">Explorer <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-image">
+                        <img src="https://img.freepik.com/photos-premium/jardin-tropical-grande-variete-plantes-ornementales-alocasia-plante-interieur-miana-verdure_717054-1323.jpg" alt="Plantes Ornementales">
+                    </div>
+                    <div class="category-content">
+                        <h3>Plantes Ornementales</h3>
+                        <p>Embellissez votre jardin avec style</p>
+                        <a href="plantes.html#ornementales" class="category-link">Explorer <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-image">
+                        <img src="https://static.aujardin.info/img/adb/outils-jardinage.jpg" alt="Outils de Jardinage">
+                    </div>
+                    <div class="category-content">
+                        <h3>Outils de Jardinage</h3>
+                        <p>Équipement professionnel pour jardiniers</p>
+                        <a href="boutique.html#outils" class="category-link">Explorer <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Agriculture et Météo Marocaine -->
+<section class="moroccan-agriculture" data-aos="fade-up">
+    <h2>L'Agriculture au Maroc</h2>
+    <div class="agriculture-content">
+        <div class="agriculture-info">
+            <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-leaf"></i>
+                <h3>Agriculture Traditionnelle</h3>
+                <p>Le Maroc possède une riche tradition agricole millénaire, avec des techniques ancestrales comme le système des khettaras et l'agriculture oasienne. Nos agriculteurs perpétuent ces savoir-faire tout en adoptant des méthodes modernes durables.</p>
+            </div>
+            <div class="info-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-seedling"></i>
+                <h3>Jardinage Marocain</h3>
+                <p>Les jardins marocains sont célèbres pour leur beauté et leur diversité. Des riads traditionnels aux potagers familiaux, découvrez l'art du jardinage adapté à notre climat méditerranéen et la culture des plantes locales.</p>
+            </div>
+            <div class="info-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-sun"></i>
+                <h3>Climat et Saisons</h3>
+                <p>Le climat marocain varie selon les régions, du méditerranéen au nord à l'aride au sud. Cette diversité permet la culture d'une grande variété de plantes tout au long de l'année. Adaptez votre jardinage au rythme des saisons locales.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Latest Blog Posts -->
+        <section class="latest-posts" data-aos="fade-up">
+            <h2>Derniers Articles du Blog</h2>
+            <div class="posts-grid">
+                <!-- Populated by JavaScript -->
+            </div>
+            <div class="text-center">
+                <a href="blog.html" class="btn secondary">Voir Tous les Articles</a>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter" data-aos="fade-up">
+            <div class="newsletter-content">
+                <h2>Restez Informé</h2>
+                <p>Inscrivez-vous à notre newsletter pour recevoir des conseils de jardinage et des offres exclusives</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre adresse email" required>
+                        <button type="submit" class="btn primary">
+                            <i class="fas fa-paper-plane"></i> S'inscrire
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À Propos</h3>
+                <p>GreenThumb est votre guide pour le jardinage marocain, offrant expertise et produits de qualité.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="plantes.html">Plantes</a></li>
+                    <li><a href="jardins.html">Jardins</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +212 5XX-XXXXXX</li>
+                    <li><i class="fas fa-envelope"></i> contact@greenthumb.ma</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Rabat, Maroc</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GreenThumb. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true
+        });
+    </script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/enhanced-interactions.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>
