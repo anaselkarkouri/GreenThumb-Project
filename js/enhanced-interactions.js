@@ -1,7 +1,7 @@
 // Enhanced Interactions for GreenThumb
 
 // Navbar Scroll Effect
-const navbar = document.querySelector('.navbar');
+const navbar = document.querySelector('nav');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
         navbar.classList.add('scrolled');
@@ -10,14 +10,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Mobile Menu
-const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-const navLinks = document.querySelector('.nav-links');
-
-mobileMenuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    mobileMenuBtn.classList.toggle('active');
-});
+// Le menu mobile est géré dans theme.js.
 
 // Smooth Scroll for Anchor Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -140,7 +133,7 @@ seasonButtons.forEach(button => {
 });
 
 // Initialize with spring content
-updateSeasonalContent('spring');
+if (seasonalTips && seasonalPlants) updateSeasonalContent('spring');
 
 // Newsletter Form Animation
 const newsletterForm = document.getElementById('newsletterForm');
@@ -174,5 +167,5 @@ categoryCards.forEach(card => {
 
 // Initialize AOS with custom settings
 document.addEventListener('DOMContentLoaded', () => {
-    AOS.refresh();
+    if (typeof AOS !== 'undefined' && typeof AOS.refresh === 'function') AOS.refresh();
 });

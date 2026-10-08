@@ -33,11 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 message.innerHTML = `
                     <div class="message-content">
                         <i class="fas fa-search"></i>
-                        <p>Aucun jardin trouvé pour "${searchTerm}"</p>
+                        <p>Aucun jardin trouvé</p>
                         <button class="reset-search">Voir tous les jardins</button>
                     </div>
                 `;
                 const grid = document.querySelector('.grid');
+                message.querySelector("p").textContent = `Aucun jardin trouvé pour "${searchTerm}"`;
                 grid.appendChild(message);
 
                 // Add click event to reset button

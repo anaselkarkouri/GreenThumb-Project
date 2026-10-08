@@ -1,194 +1,42 @@
-# GreenThumb - Plateforme d'Agriculture et de Jardinage Marocain
+# GreenThumb — Jardinage et patrimoine végétal marocain
 
-GreenThumb est une plateforme web complète dédiée à l'agriculture et au jardinage marocain, mettant en valeur les plantes traditionnelles, les techniques agricoles locales et le riche patrimoine horticole du Maroc.
+Un site web consacré aux plantes, aux jardins marocains et aux conseils de jardinage. Le projet associe contenus éditoriaux et interactions côté navigateur : recherche, filtres, panier et export PDF.
 
-## Pages et Fonctionnalités
+**HTML5 · CSS3 · JavaScript · localStorage · html2pdf.js · Responsive design**
 
-### 1. Accueil (index.html)
+## Fonctionnalités
 
-- Hero section avec appel à l'action
-- **Paroles et phrases sur l'agriculture et le jardinage marocain**
-- Catégories populaires avec images
-- Navigation intuitive
-- Design responsive et moderne
-- **Possibilité de switcher en mode sombre**
-- Animations AOS pour le défilement
+- Accueil et navigation entre sept pages : plantes, jardins, boutique, blog, contact et article détaillé.
+- Catalogue de plantes, catégories et conseils saisonniers.
+- Recherche de jardins et export PDF de leurs fiches.
+- Boutique avec filtres, tri et panier conservé dans le navigateur.
+- Blog, pagination et articles de jardinage.
+- Thème clair/sombre mémorisé et interfaces adaptées aux différentes tailles d’écran.
+- Formulaire de contact et parcours de commande de démonstration côté navigateur.
 
-### 2. Plantes (plantes.html)
+## Lancer le site
 
-- Catalogue complet des plantes marocaines
-- Noms en français et arabe
-- **Système de filtrage avancé** :
-  - Par saison (été, automne, hiver)
-  - Par type (aromatiques, médicinales, ornementales)
-- **Système de recherche dédié** (barre de recherche en temps réel)
-- Images haute qualité
-- Descriptions détaillées et conseils de culture
-- **Possibilité de switcher en mode sombre**
+```bash
+git clone https://github.com/anaselkarkouri/GreenThumb-Project.git
+cd GreenThumb-Project
+python -m http.server 8087 --bind 127.0.0.1
+```
 
-### 3. Jardins (jardins.html)
+Ouvrir `http://127.0.0.1:8087`. Les bibliothèques PDF, les polices et certaines illustrations sont chargées depuis leurs services externes. Le site est une réalisation front-end : le panier, les messages et les parcours présentés servent la démonstration de l’interface.
 
-- Galerie des jardins traditionnels marocains
-- **Système de recherche dédié**
-- **Guide pratique du jardinage marocain** en grille responsive
-- **Export PDF des fiches de jardins**
-- Caractéristiques détaillées :
-  - Style de jardin
-  - Surface recommandée
-  - Types de plantes adaptées
-  - Systèmes d'irrigation
-- **Possibilité de switcher en mode sombre**
+## Vérifications
 
-### 4. Boutique (boutique.html)
+Les sept pages ont passé les contrôles DOM : aucun fichier local référencé manquant, aucun échec d’exécution dans le harnais, recherche de jardins, affichage des requêtes comme texte, ajout unique au panier et changement de thème. Les scripts JavaScript passent la vérification syntaxique. Les contenus, scripts et documents du dépôt existant restent suivis dans son historique Git.
 
-- Catalogue organisé de produits
-- **Système de filtrage par catégories** :
-  - Graines et Semences
-  - Outils de Jardinage
-  - Décoration de Jardin
-- **Tri des produits** :
-  - Par prix (croissant/décroissant)
-  - Par nom
-- **Panier d'achat interactif** :
-  - Ajout/suppression via `addToCart()`
-  - Mise à jour des quantités
-  - Calcul automatique du total
-  - Modal de panier (`cart-modal`) fixé à droite
-- Animations d'ajout au panier
-- Stockage des données dans `localStorage`
-- **Possibilité de switcher en mode sombre**
+## Aperçu
 
-### 5. Blog (blog.html)
+![Accueil mobile](docs/media/accueil-mobile.jpg)
 
-- Articles sur l'agriculture marocaine
-- **Système de pagination**
-- **Système de recherche dédié**
-- **Section de commentaires interactive**
-- Mise en page responsive
-- **Possibilité de switcher en mode sombre**
+Capture réelle de la version publiée, octobre 2026.
 
-### 6. Contact (contact.html)
+## Documents
 
-- Formulaire de contact avec validation
-- Carte de localisation interactive
-- Informations de contact (email, téléphone)
-- Heures d'ouverture
-- Validation des entrées en temps réel
-- **Possibilité de switcher en mode sombre**
+- [Présentation du projet](Green%20Modern%20Gardening%20Presentation.pdf)
+- [Proposition de campagne marketing](Document%20Proposition%20de%20Campagne%20Marketing%20en%20Vert.pdf)
 
-## Architecture Technique
-
-### Structure des Fichiers
-
-GreenThumb/
-├── css/
-│   ├── boutique-style.css     # Styles de la boutique
-│   ├── components.css         # Styles des composants réutilisables
-│   ├── dark-mode.css          # Styles du thème sombre
-│   ├── enhanced-style.css     # Styles améliorés
-│   ├── jardins-style.css      # Styles de la page jardins
-│   ├── modern-style.css       # Styles modernes
-│   ├── pages-style.css        # Styles spécifiques aux pages
-│   ├── plantes-style.css      # Styles de la page plantes
-│   └── style.css              # Styles globaux
-├── js/
-│   ├── blog.js               # Logique du blog
-│   ├── boutique.js           # Logique de la boutique
-│   ├── cart.js               # Gestion du panier
-│   ├── category-filter.js    # Filtrage par catégories
-│   ├── contact.js            # Gestion du formulaire de contact
-│   ├── content-toggle.js     # Basculement de contenu
-│   ├── dark-mode.js          # Gestion du mode sombre
-│   ├── drag-drop.js          # Fonctionnalités glisser-déposer
-│   ├── enhanced-interactions.js # Interactions améliorées
-│   ├── export-pdf.js         # Exportation PDF
-│   ├── jardins.js            # Logique de la page jardins
-│   ├── main.js               # JavaScript principal
-│   ├── nav.js                # Navigation
-│   ├── plantes.js            # Logique de la page plantes
-│   ├── search-jardins.js     # Recherche dans les jardins
-│   ├── search.js             # Recherche globale
-│   └── theme.js              # Gestion des thèmes
-├── articles/                 # Articles du blog
-│   └── menthe-marocaine.html # Article sur la menthe
-├── index.html               # Page d'accueil
-├── plantes.html             # Page des plantes
-├── jardins.html             # Page des jardins
-├── boutique.html            # Page de la boutique
-├── blog.html                # Page du blog
-├── contact.html             # Page de contact
-└── README.md                # Documentation du projet
-
-## Technologies Utilisées
-
-#### Frontend
-
-- **HTML5** : Structure sémantique
-- **CSS3** : Flexbox, Grid, animations
-- **JavaScript ES6+** : Interactivité dynamique
-
-#### Bibliothèques
-
-- **Font Awesome** : Icônes
-- **Google Fonts** : Polices (Poppins, Noto Sans Arabic)
-- **html2pdf.js** : Exportation PDF
-- **AOS** : Animations au défilement
-
-#### Fonctionnalités Avancées
-
-- **Mode sombre/clair persistant** (activable dans toutes les pages)
-- Support multilingue (français/arabe)
-- Responsive design (breakpoints 768px, 480px)
-- LocalStorage pour le panier et les préférences
-- Validation des formulaires
-
-## Performance et Optimisation
-
-- Chargement différé des images
-- Minification des fichiers CSS/JS
-- Animations optimisées
-- Support des navigateurs modernes
-
-## Sécurité
-
-- Validation des entrées
-- Protection contre XSS
-- Sanitization des données
-
-## Installation et Prérequis
-
-### Démarrage Rapide
-- Ouvrir `index.html` dans un navigateur moderne
-- **Connexion Internet requise** pour :
-  - Polices Google Fonts
-  - Icônes Font Awesome
-  - Bibliothèque html2pdf.js
-
-## Maintenance et Bonnes Pratiques
-
-### 1. Mises à jour Recommandées
-- Vérifier les dépendances externes
-- Maintenir le contenu des articles et produits
-- Mettre à jour les prix de la boutique
-
-### 2. Tests et Performance
-- Tester sur divers appareils et navigateurs
-- Surveiller les performances avec Lighthouse
-- Effectuer des sauvegardes régulières
-- Optimiser les images et ressources
-
-## Contribution
-
-### Guide de Contribution
-1. Forker le projet
-2. Créer une branche (`git checkout -b feature/nouveau`)
-3. Commiter les changements
-4. Pousser la branche
-5. Ouvrir une Pull Request
-
-## Support et Contact
-
-### Nous Contacter
-- **Email** : contact@greenthumb.ma
-- **Téléphone** : +212 5XX-XXXXXX
-- **Site web** : www.greenthumb.ma
+Projet présenté dans le portfolio d’**Anas El Karkouri**.
