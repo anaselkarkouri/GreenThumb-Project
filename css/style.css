@@ -407,7 +407,7 @@ nav.scrolled {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('../images/hero-bg.jpg') no-repeat center center;
+                url('../images/garden.svg') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -747,7 +747,7 @@ nav.scrolled {
 /* Home Page Styles */
 .hero {
     height: 80vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero-bg.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/garden.svg');
     background-size: cover;
     background-position: center;
     display: flex;

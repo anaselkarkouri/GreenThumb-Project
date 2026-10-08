@@ -15,7 +15,7 @@
 
 .boutique-hero {
     background: linear-gradient(rgba(26, 93, 26, 0.9), rgba(22, 72, 22, 0.9)),
-                url('../images/boutique-bg.jpg');
+                url('../images/garden.svg');
     background-size: cover;
     background-position: center;
     padding: 4rem 2rem;

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#b7d6b9"/><stop offset="1" stop-color="#e8e0b8"/></linearGradient>
+    <linearGradient id="leaf"><stop stop-color="#3b7951"/><stop offset="1" stop-color="#194e39"/></linearGradient>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1600v900H0z"/>
+  <circle cx="1260" cy="210" r="100" fill="#f2daa4" opacity=".7"/>
+  <path fill="#86a77a" d="M0 620Q350 310 730 580T1600 520v380H0z"/>
+  <path fill="#476e4c" d="M0 700Q420 450 790 710T1600 660v240H0z"/>
+  <path fill="#285943" d="M0 830Q530 670 1000 800T1600 760v140H0z"/>
+  <g fill="none" stroke="#234f39" stroke-width="16">
+    <path d="M140 900Q80 610 280 220"/><path d="M1470 900Q1560 610 1310 200"/>
+  </g>
+  <g fill="url(#leaf)">
+    <path d="M130 710Q-90 490 30 390Q200 510 130 710M160 580Q180 300 380 340Q340 570 160 580M210 410Q130 120 280 90Q350 280 210 410"/>
+    <path d="M1500 700Q1660 410 1580 320Q1400 530 1500 700M1440 520Q1210 480 1230 310Q1450 340 1440 520M1380 340Q1430 90 1270 60Q1210 220 1380 340"/>
+  </g>
+</svg>

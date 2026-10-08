@@ -30,9 +30,11 @@ Les sept pages ont passé les contrôles DOM : aucun fichier local référencé 
 
 ## Aperçu
 
-![Accueil mobile](docs/media/accueil-mobile.jpg)
+![Accueil sur ordinateur](docs/media/accueil-ordinateur.jpg)
 
-Capture réelle de la version publiée, octobre 2026.
+![Accueil sur téléphone](docs/media/accueil-mobile.jpg)
+
+Captures réelles du site web sur ordinateur et au format responsive, octobre 2026.
 
 ## Documents
 
